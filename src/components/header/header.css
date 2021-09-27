@@ -1,0 +1,121 @@
+/*.header-text {*/
+/*    background-color: darkgray;*/
+/*}*/
+
+.main-header {
+    height: 800px;
+}
+
+.header {
+    background: url('https://image.partner.glovoapp.com/lib/fe4511707564057d751573/m/2/8770b8c0-ece1-40c5-90ac-b5d6eed144f0.png') no-repeat;
+    background-size: cover;
+    height: 800px;
+    padding: 0;
+    margin: 0;
+}
+
+.lang-selector {
+    position: absolute;
+    left: 80%;
+}
+
+.lang-container {
+    width: 100%;
+    /*border: 1px solid black;*/
+    height: 25px;
+}
+
+#langSelect {
+    border: 1px solid #e8e8e8;
+    /*padding: 8px 40px 0 8px;*/
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Gotham-book, sans-serif;
+    background: #ffffff;
+    color: #35495e;
+    border-radius: 5px;
+    margin-top: 20px;
+    /*margin-right: 170px;*/
+    width: 125px;
+    height: 30px;
+    margin-left: 40px;
+}
+
+.title {
+    color: white;
+    font-size: 48px;
+    font-family: GothamBold, sans-serif;
+    padding-left: 3em;
+}
+
+.title-container {
+    display: flex;
+    align-items: baseline;
+}
+
+#select.option:hover {
+    background-color: orange;
+}
+
+.header-content-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.text-part-inline {
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    max-width: 35%;
+    left: 10%;
+}
+
+.paragraph-one {
+    font-size: 32px;
+    /*line-height: 40px;*/
+    color: #ffffff;
+    font-family: 'GothamBold';
+    margin-bottom: 40px;
+}
+
+.paragraph-two {
+    font-size: 38px;
+    /*line-height: 40px;*/
+    color: #ffffff;
+    font-family: 'GothamBold';
+    margin-bottom: 5px;
+}
+
+.paragraph-three {
+    font-size: 32px;
+    line-height: 42px;
+    color: #ffc244;
+    font-family: 'GothamBold';
+}
+
+/*.option {*/
+/*    color: blue;*/
+/*}*/
+
+/*.option:hover, .option:focus, .option:active {*/
+/*    background-color: red !important;*/
+/*    background: red !important;*/
+/*}*/
+
+/*.option:first-child {*/
+/*    background: red;*/
+/*}*/
+
+/*select option:hover {*/
+/*    background: orange !important;*/
+/*}*/
+/*.lang-selector option:hover {*/
+/*    background: orange;*/
+/*    color: #fff;*/
+/*}*/
+
+
+/*select:focus > option:hover {*/
+/*    background: black !important;*/
+/*    color: orange !important;*/
+/*}*/
