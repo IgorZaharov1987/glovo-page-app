@@ -17,35 +17,35 @@ function Footer() {
                             <div className='footer-nav-item' >
                                 <p className='footer-nav-item-title' >WORK WITH US</p>
                                 <ul>
-                                    <li><a href="">Careers</a></li>
-                                    <li><a href="">Store partners</a></li>
+                                    <li><a href="https://glovoapp.com/es/jobs" target="_blank">Careers</a></li>
+                                    <li><a href="https://cloud.partner.glovoapp.com/partners" target="_blank">Store partners</a></li>
                                     <li><a href="">Couriers</a></li>
-                                    <li><a href="">Glovo Business</a></li>
+                                    <li><a href="https://couriers.glovoapp.com/ke/?utm_source=partnersacqage&utm_medium=Glovo&utm_campaign=partnersfooter" target="_blank">Glovo Business</a></li>
                                 </ul>
                             </div>
 
                             <div className='footer-nav-item' >
                                 <p className='footer-nav-item-title' >HELP</p>
                                 <ul>
-                                    <li><a href="">FAQ</a></li>
-                                    <li><a href="">Contact US</a></li>
+                                    <li><a href="https://glovoapp.com/es/faq" target="_blank">FAQ</a></li>
+                                    <li><a href="https://www.marketinet.eu/glovo/index.html#" target="_blank">Contact US</a></li>
                                 </ul>
                             </div>
 
                             <div className='footer-nav-item' >
                                 <p className='footer-nav-item-title' >LEGAL</p>
                                 <ul>
-                                    <li><a href="">Terms and conditions</a></li>
-                                    <li><a href="">Privacy Policy</a></li>
+                                    <li><a href="https://glovoapp.com/es/legal/terms" target="_blank">Terms and conditions</a></li>
+                                    <li><a href="https://glovoapp.com/es/legal/privacy" target="_blank">Privacy Policy</a></li>
                                 </ul>
                             </div>
 
                             <div className='footer-nav-item' >
                                 <p className='footer-nav-item-title' >FOLLOW US</p>
                                 <ul>
-                                    <li><a href="">Facebook</a></li>
-                                    <li><a href="">Twitter</a></li>
-                                    <li><a href="">Instagram</a></li>
+                                    <li><a href="https://www.facebook.com/glovoappES" target="_blank">Facebook</a></li>
+                                    <li><a href="https://twitter.com/Glovo_ES" target="_blank">Twitter</a></li>
+                                    <li><a href="https://www.instagram.com/glovo_es/" target="_blank">Instagram</a></li>
                                 </ul>
                             </div>
 

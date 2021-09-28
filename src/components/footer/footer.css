@@ -70,3 +70,9 @@ footer p {
     font-family: "Gotham-Medium", sans-serif;
     line-height: 35px;
 }
+
+footer a {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "Gotham-Medium", sans-serif;
+}
