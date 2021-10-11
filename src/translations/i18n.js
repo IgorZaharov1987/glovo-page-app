@@ -110,6 +110,55 @@ i18n
                     }
                 }
             },
+            esp: {
+                translation: {
+                    description: {
+                        part0: '¡Únete a Glovo!',
+                        part1: '¡Registre su negocio en Glovo!',
+                        part2: 'Incrementa tus ventas hasta en un 40%',
+                        part3: 'Los clientes hacen pedidos en línea ahora más que nunca, estén donde estén',
+                        main0: 'BENEFICIOS DE TRABAJAR CON GLOVO:',
+                        main1: 'Controle sus pedidos desde la preparación hasta la entrega',
+                        main2: 'Grow your brand, thanks to our database of millions of users.',
+                        main3: 'Haz crecer tu marca, gracias a nuestra base de datos de millones de usuarios.',
+                        main4: 'Entregue sus pedidos de forma rápida y sencilla: en 30 minutos, todos los días del año, las 24 horas del día.',
+                        comment1: 'Glovo es una aplicación genial tanto para clientes como para socios. Nos permite llegar a más clientes y difundir nuestra marca por la ciudad muy rápidamente.',
+                        author1: 'Ion Dumitru - Propietario',
+                        comment2: '¡Glovo es parte de la revolución de las aplicaciones y ha cambiado el mercado! Es nuestro aliado más cercano ya que tenemos un objetivo común, y eso es asegurarnos de que nuestros clientes sigan regresando.',
+                        author2: 'Julio Gauna - Socio director',
+                        comment3: 'Glovo ha demostrado ser una gran opción. Cumple tecnológicamente con nuestra solución para la tramitación de pedidos.',
+                        author3: 'Vladimir Neskovic, cofundador de Loha Hawaiian Food',
+                        workWithUs: 'TRABAJA CON NOSOTROS',
+                        careers: 'Carreras',
+                        storePartners: 'Socios de tienda',
+                        couriers: 'Mensajeros',
+                        glovoBusiness: 'Glovo Business',
+                        help: 'AYUDA',
+                        faq: 'FAQ',
+                        contactUs: 'Contáctenos',
+                        legal: 'LEGAL',
+                        terms: 'Términos y condiciones',
+                        policy: 'Política de privacidad',
+                        followUs: 'SÍGUENOS',
+                        facebook: 'Facebook',
+                        twitter: 'Twitter',
+                        instagram: 'Instagram',
+                        partnerWithUs: 'Asociarse con nosotros',
+                        partnerWithUsText: 'Necesitamos más información sobre su negocio para evaluar las posibilidades de asociación.',
+                        companyName: 'Nombre de empresa',
+                        firstName: 'Nombre de pila',
+                        lastName: 'Apellido',
+                        eMail: 'E-mail',
+                        prefix: 'Prefijo de número de teléfono',
+                        phone: 'Número de teléfono',
+                        estType: 'Tipo de establecimiento',
+                        estNumber: 'Numero de establecimientos',
+                        referral: '¿Tiene un código promocional o de referencia?',
+                        privacy: 'Acepto la politica de privacidad',
+                        continueBtn: 'Continuar'
+                    }
+                }
+            },
         }
     });
 
