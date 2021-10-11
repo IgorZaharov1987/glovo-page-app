@@ -7,18 +7,15 @@ import Col from 'react-bootstrap/Col';
 import FloatingLabel from 'react-bootstrap-floating-label';
 
 import ReactFlagsSelect from 'react-flags-select';
+import {useTranslation} from "react-i18next";
 
 
 
 function FormPartner() {
-
+    const { t, i18n } = useTranslation();
     const [selected, setSelected] = useState('');
 
-    // const options = [
-    //     { value: 'chisinau', label: 'Chisinau' },
-    //     { value: 'sofia', label: 'Sofia' },
-    //     { value: 'moscow', label: 'Moscow' }
-    // ]
+
 
 
     return (

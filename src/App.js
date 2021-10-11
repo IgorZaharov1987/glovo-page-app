@@ -5,15 +5,25 @@ import Header from './components/header/header.js';
 import Main from "./components/main/main";
 import Slider from './components/slider/slider.js';
 import Footer from './components/footer/footer.js';
+import {createContext, useEffect, useState} from "react";
+
+export const Store = createContext(null);
+
 
 function App() {
+    const [ lang, setLang ] = useState('en');
+    useEffect(() => {console.log('render')})
   return (
-    <div className="App">
-      <Header />
-      <Main />
-      <Slider />
-      <Footer />
-    </div>
+
+          <div className="App">
+              <Store.Provider value={{setLang}}>
+              <Header />
+              <Main />
+              <Slider />
+              <Footer />
+              </Store.Provider>
+          </div>
+
   );
 }
 

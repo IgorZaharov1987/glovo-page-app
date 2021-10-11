@@ -4,8 +4,11 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 import './slider.css';
+import {useTranslation} from "react-i18next";
 
 function Slider() {
+    const { t, i18n } = useTranslation();
+
     return (
         <OwlCarousel className='owl-theme' loop margin={10} nav>
             <div className='item'>
@@ -14,12 +17,11 @@ function Slider() {
                     alt="" width={500} height={470}/>
                 <div className='inner-text'>
                     <p>
-                        Glovo is a cool app for both customers and partners. It enables us to reach more customers and
-                        spread our brand across the city very fast.
+                        {t('comment1')}
                     </p>
 
                     <p>
-                        Ion Dumitru - Owner
+                        {t('author1')}
                     </p>
 
                 </div>
@@ -32,12 +34,11 @@ function Slider() {
 
                 <div className='inner-text'>
                     <p>
-                        Glovo is part of the app revolution and has changed the market! It's our closest ally as we have
-                        a common goal, and that's making sure our clients keep coming back.
+                        {t('comment2')}
                     </p>
 
                     <p>
-                        Julio Gauna - Managing partner
+                        {t('author2')}
                     </p>
 
                 </div>
@@ -50,70 +51,17 @@ function Slider() {
 
                 <div className='inner-text'>
                     <p>
-                        Glovo has proven a great option. Technologically compliant with our solution for processing
-                        orders.
+                        {t('comment3')}
                     </p>
 
                     <p>
-                        Vladimir Neskovic, Co-founder of Loha Hawaiian Food
+                        {t('author3')}
                     </p>
 
                 </div>
             </div>
 
         {/*TODO duplicates start, need to work on it*/}
-            <div className='item'>
-                <img
-                    src="https://image.partner.glovoapp.com/lib/fe4511707564057d751573/m/1/f10f5548-07fa-4aa6-bf8d-50572266c931.png"
-                    alt="" width={500} height={470}/>
-                <div className='inner-text'>
-                    <p>
-                        Glovo is a cool app for both customers and partners. It enables us to reach more customers and
-                        spread our brand across the city very fast.
-                    </p>
-
-                    <p>
-                        Ion Dumitru - Owner
-                    </p>
-
-                </div>
-            </div>
-
-            <div className='item'>
-                <img
-                    src="https://image.partner.glovoapp.com/lib/fe4511707564057d751573/m/1/496b3394-e954-4f07-8aa6-bbda95d71e93.png"
-                    alt="" width={500} height={470}/>
-
-                <div className='inner-text'>
-                    <p>
-                        Glovo is part of the app revolution and has changed the market! It's our closest ally as we have
-                        a common goal, and that's making sure our clients keep coming back.
-                    </p>
-
-                    <p>
-                        Julio Gauna - Managing partner
-                    </p>
-
-                </div>
-            </div>
-
-            <div className='item'>
-                <img
-                    src="https://image.partner.glovoapp.com/lib/fe4511707564057d751573/m/1/e5acba5a-62ae-4651-81d5-7279a0a03660.png"
-                    alt="" width={500} height={470}/>
-
-                <div className='inner-text'>
-                    <p>
-                        Glovo has proven a great option. Technologically compliant with our solution for processing
-                        orders.
-                    </p>
-
-                    <p>
-                        Vladimir Neskovic, Co-founder of Loha Hawaiian Food
-                    </p>
-
-                </div>
-            </div>
 
         {/*TODO duplicates end here, need to work on it*/}
         </OwlCarousel>

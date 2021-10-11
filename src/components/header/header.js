@@ -1,16 +1,19 @@
 import './header.css';
-import React from 'react';
+import React, {useContext} from 'react';
 import FormPartner from "../form-partner/formPartner";
 import { useTranslation } from 'react-i18next';
-
+import {Store} from '../../App';
 
 
 function Header() {
     const { t, i18n } = useTranslation();
+    const  {setLang} = useContext(Store);
 
     const langChanger = (event) => {
         const value = event.currentTarget.value;
-        i18n.changeLanguage(value, () => {});
+        i18n.changeLanguage(value, () => {
+        }). then(r => setLang(value));
+
     }
 
 
