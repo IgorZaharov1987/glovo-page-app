@@ -1,6 +1,6 @@
 import './main.css'
 import { useTranslation } from 'react-i18next';
-import {useState} from "react";
+
 
 
 function Main() {
@@ -35,7 +35,7 @@ function Main() {
 
                       <div className='benefit-item'>
                           <img src="https://image.partner.glovoapp.com/lib/fe4511707564057d751573/m/1/86e22521-f235-4dbb-b3bb-963cb187d94c.png" alt=""/>
-                          <p>{t('main4')}</p>
+                          <p>{t('description.main4')}</p>
                       </div>
 
                   </div>

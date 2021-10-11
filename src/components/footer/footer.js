@@ -1,6 +1,6 @@
 import './footer.css';
 import { useTranslation} from "react-i18next";
-import {useState} from "react";
+
 
 function Footer() {
     const { t, i18n } = useTranslation();
@@ -19,37 +19,37 @@ function Footer() {
                     <div className='footer-info' >
                         <div className='footer-items-navigation' >
                             <div className='footer-nav-item' >
-                                <p className='footer-nav-item-title' >{t('workWithUs')}</p>
+                                <p className='footer-nav-item-title' >{t('description.workWithUs')}</p>
                                 <ul>
-                                    <li><a href="https://glovoapp.com/es/jobs" target="_blank">{t('careers')}</a></li>
-                                    <li><a href="https://cloud.partner.glovoapp.com/partners" target="_blank">{t('storePartners')}</a></li>
-                                    <li><a href="">{t('couriers')}</a></li>
-                                    <li><a href="https://couriers.glovoapp.com/ke/?utm_source=partnersacqage&utm_medium=Glovo&utm_campaign=partnersfooter" target="_blank">{t('glovoBusiness')}</a></li>
+                                    <li><a href="https://glovoapp.com/es/jobs" target="_blank">{t('description.careers')}</a></li>
+                                    <li><a href="https://cloud.partner.glovoapp.com/partners" target="_blank">{t('description.storePartners')}</a></li>
+                                    <li><a href="">{t('description.couriers')}</a></li>
+                                    <li><a href="https://couriers.glovoapp.com/ke/?utm_source=partnersacqage&utm_medium=Glovo&utm_campaign=partnersfooter" target="_blank">{t('description.glovoBusiness')}</a></li>
                                 </ul>
                             </div>
 
                             <div className='footer-nav-item' >
-                                <p className='footer-nav-item-title' >{t('help')}</p>
+                                <p className='footer-nav-item-title' >{t('description.help')}</p>
                                 <ul>
-                                    <li><a href="https://glovoapp.com/es/faq" target="_blank">{t('faq')}</a></li>
-                                    <li><a href="https://www.marketinet.eu/glovo/index.html#" target="_blank">{t('contactUs')}</a></li>
+                                    <li><a href="https://glovoapp.com/es/faq" target="_blank">{t('description.faq')}</a></li>
+                                    <li><a href="https://www.marketinet.eu/glovo/index.html#" target="_blank">{t('description.contactUs')}</a></li>
                                 </ul>
                             </div>
 
                             <div className='footer-nav-item' >
-                                <p className='footer-nav-item-title' >{t('legal')}</p>
+                                <p className='footer-nav-item-title' >{t('description.legal')}</p>
                                 <ul>
-                                    <li><a href="https://glovoapp.com/es/legal/terms" target="_blank">{t('terms')}</a></li>
-                                    <li><a href="https://glovoapp.com/es/legal/privacy" target="_blank">{t('policy')}</a></li>
+                                    <li><a href="https://glovoapp.com/es/legal/terms" target="_blank">{t('description.terms')}</a></li>
+                                    <li><a href="https://glovoapp.com/es/legal/privacy" target="_blank">{t('description.policy')}</a></li>
                                 </ul>
                             </div>
 
                             <div className='footer-nav-item' >
-                                <p className='footer-nav-item-title' >{t('followUs')}</p>
+                                <p className='footer-nav-item-title' >{t('description.followUs')}</p>
                                 <ul>
-                                    <li><a href="https://www.facebook.com/glovoappES" target="_blank">{t('facebook')}</a></li>
-                                    <li><a href="https://twitter.com/Glovo_ES" target="_blank">{t('twitter')}</a></li>
-                                    <li><a href="https://www.instagram.com/glovo_es/" target="_blank">{t('instagram')}</a></li>
+                                    <li><a href="https://www.facebook.com/glovoappES" target="_blank">{t('description.facebook')}</a></li>
+                                    <li><a href="https://twitter.com/Glovo_ES" target="_blank">{t('description.twitter')}</a></li>
+                                    <li><a href="https://www.instagram.com/glovo_es/" target="_blank">{t('description.instagram')}</a></li>
                                 </ul>
                             </div>
 

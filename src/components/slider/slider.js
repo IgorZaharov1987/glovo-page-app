@@ -17,11 +17,11 @@ function Slider() {
                     alt="" width={500} height={470}/>
                 <div className='inner-text'>
                     <p>
-                        {t('comment1')}
+                        {t('description.comment1')}
                     </p>
 
                     <p>
-                        {t('author1')}
+                        {t('description.author1')}
                     </p>
 
                 </div>
@@ -34,11 +34,11 @@ function Slider() {
 
                 <div className='inner-text'>
                     <p>
-                        {t('comment2')}
+                        {t('description.comment2')}
                     </p>
 
                     <p>
-                        {t('author2')}
+                        {t('description.author2')}
                     </p>
 
                 </div>
@@ -51,60 +51,19 @@ function Slider() {
 
                 <div className='inner-text'>
                     <p>
-                        {t('comment3')}
+                        {t('description.comment3')}
                     </p>
 
                     <p>
-                        {t('author3')}
+                        {t('description.author3')}
                     </p>
 
                 </div>
             </div>
 
-        {/*TODO duplicates start, need to work on it*/}
+        {/*TODO duplicates */}
 
-        {/*TODO duplicates end here, need to work on it*/}
         </OwlCarousel>
-
-
-        // <OwlCarousel className='owl-theme' loop margin={10} nav>
-        //     <div class='item'>
-        //         <h4>1</h4>
-        //     </div>
-        //     <div class='item'>
-        //         <h4>2</h4>
-        //     </div>
-        //     <div class='item'>
-        //         <h4>3</h4>
-        //     </div>
-        //     <div class='item'>
-        //         <h4>4</h4>
-        //     </div>
-        //     <div class='item'>
-        //         <h4>5</h4>
-        //     </div>
-        //     <div class='item'>
-        //         <h4>6</h4>
-        //     </div>
-        //     <div class='item'>
-        //         <h4>7</h4>
-        //     </div>
-        //     <div class='item'>
-        //         <h4>8</h4>
-        //     </div>
-        //     <div class='item'>
-        //         <h4>9</h4>
-        //     </div>
-        //     <div class='item'>
-        //         <h4>10</h4>
-        //     </div>
-        //     <div class='item'>
-        //         <h4>11</h4>
-        //     </div>
-        //     <div class='item'>
-        //         <h4>12</h4>
-        //     </div>
-        // </OwlCarousel>
     );
 }
 
