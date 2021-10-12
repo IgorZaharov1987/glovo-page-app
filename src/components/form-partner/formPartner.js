@@ -7,26 +7,21 @@ import Col from 'react-bootstrap/Col';
 import FloatingLabel from 'react-bootstrap-floating-label';
 
 import ReactFlagsSelect from 'react-flags-select';
+import {useTranslation} from "react-i18next";
 
 
 
 function FormPartner() {
-
+    const { t, i18n } = useTranslation();
     const [selected, setSelected] = useState('');
-
-    // const options = [
-    //     { value: 'chisinau', label: 'Chisinau' },
-    //     { value: 'sofia', label: 'Sofia' },
-    //     { value: 'moscow', label: 'Moscow' }
-    // ]
 
 
     return (
         <div className='form-wrapper'>
             <form action="" method='post' id='page-form' className='main-form'>
                 <div className='form-inner-div' >
-                    <p className='partner-us'>Partner with us</p>
-                    <p className='partner-us-txt'>We need more information about your business to assess the partnership possibilities</p>
+                    <p className='partner-us'>{t('description.partnerWithUs')}</p>
+                    <p className='partner-us-txt'>{t('description.partnerWithUsText')}</p>
                     <hr id='form-line'/>
 
 
@@ -36,52 +31,39 @@ function FormPartner() {
                         onSelect={code => setSelected(code)}
                     />
 
-                    {/*/This is not working now.../*/}
-                    {/*<CountrySelect*/}
-                    {/*    value={value}*/}
-                    {/*    onChange={setValue}*/}
-                    {/* />*/}
-
-                    {/*<br/>*/}
-
-                    {/*<p>City</p>*/}
-                    {/*<Select options={options} />*/}
-
-                    {/*<br/>*/}
-
 
                     <br/>
                     {/*<p>Business Name</p>*/}
-                    <Form.Control type="text" placeholder="Company name" />
+                    <Form.Control type="text" placeholder={t('description.companyName')} />
                     <br/>
                     {/*<Form.Control type="text" placeholder="Name" className='mb-3'/>*/}
                     {/*<Form.Control type="text" placeholder="Last name" className='mb-3'/>*/}
 
                     <Row>
                         <Col>
-                            <Form.Control placeholder="First name" />
+                            <Form.Control placeholder={t('description.firstName')} />
                         </Col>
                         <Col>
-                            <Form.Control placeholder="Last name" />
+                            <Form.Control placeholder={t('description.lastName')} />
                         </Col>
                     </Row>
 
                     <br/>
 
 
-                    <Form.Control type="text" placeholder="E-mail" />
+                    <Form.Control type="text" placeholder={t('description.eMail')} />
 
                     <br/>
 
 
                     <Row className="g-2">
                         <Col md>
-                            <FloatingLabel controlId="floatingInputPrefix" label="Phone number prefix">
+                            <FloatingLabel controlId="floatingInputPrefix" label={t('description.prefix')}>
                                 <Form.Control type="phone" placeholder="" />
                             </FloatingLabel>
                         </Col>
                         <Col md>
-                            <FloatingLabel controlId="floatingSelectPhone" label="Phone number">
+                            <FloatingLabel controlId="floatingSelectPhone" label={t('description.phone')}>
                                 <Form.Control as='select' aria-label="Floating label select example" />
                             </FloatingLabel>
                         </Col>
@@ -90,14 +72,14 @@ function FormPartner() {
                     <br/>
 
 
-                    <FloatingLabel controlId="floatingSelectEstablishment" label="Type of establishment">
+                    <FloatingLabel controlId="floatingSelectEstablishment" label={t('description.estType')}>
                         <Form.Control as='select' aria-label="Floating label" />
                     </FloatingLabel>
 
                     <br/>
 
-                    <p>Number of establishments</p>
-                    <Form.Control as='select' aria-label="Type of establishment">
+                    <p>{t('description.estNumber')}</p>
+                    <Form.Control as='select' aria-label={t('description.estNumber')}>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -109,7 +91,7 @@ function FormPartner() {
 
 
                     <div className='promo-code'>
-                    <span>Do you have a Referral or Promotional Code?</span>
+                    <span>{t('description.referral')}</span>
                         <input type="checkbox" id="have-promo-code" />
                     </div>
 
@@ -119,11 +101,11 @@ function FormPartner() {
 
                     <div className='accept-privacy'>
                         <input type="checkbox" id="accept-privacy-input"/>
-                        <span>I accept the privacy policy</span>
+                        <span>{t('description.privacy')}</span>
                     </div>
                     {/*TODO*/}
 
-                    <button type="button" className="continue-btn">Continue</button>
+                    <button type="button" className="continue-btn">{t('description.continueBtn')}</button>
 
                     {/*<Form.Control as="select" aria-label="Default phone">*/}
                     {/*    <option value="None"></option>*/}
