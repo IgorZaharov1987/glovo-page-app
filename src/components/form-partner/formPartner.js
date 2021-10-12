@@ -107,78 +107,7 @@ function FormPartner() {
 
                     <button type="button" className="continue-btn">{t('description.continueBtn')}</button>
 
-                    {/*<Form.Control as="select" aria-label="Default phone">*/}
-                    {/*    <option value="None"></option>*/}
-                    {/*    <option value="1">Phone-One</option>*/}
-                    {/*    <option value="2">Phone-Two</option>*/}
-                    {/*    <option value="3">Phone-Three</option>*/}
-                    {/*</Form.Control>*/}
 
-
-                    {/*<div className="dropdown">*/}
-                    {/*    <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"*/}
-                    {/*            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-toggle="dropdown">*/}
-                    {/*        Dropdown button*/}
-                    {/*    </button>*/}
-                    {/*    <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">*/}
-                    {/*        <a className="dropdown-item" href="#">Action</a>*/}
-                    {/*        <a className="dropdown-item" href="#">Another action</a>*/}
-                    {/*        <a className="dropdown-item" href="#">Something else here</a>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
-
-
-                    {/*<Form.Control as="select" aria-label="Default select example">*/}
-                    {/*    <option>Open this select menu</option>*/}
-                    {/*    <option value="1">*/}
-                    {/*        <img src={require("../../iconsSVG/ad.svg")} alt=""/>*/}
-                    {/*    </option>*/}
-                    {/*    <option value="2">Two</option>*/}
-                    {/*    <option value="3">Three</option>*/}
-                    {/*</Form.Control>*/}
-
-                        {/*<div className='dropdown'>*/}
-                        {/*    <ul id="country-select" className='dropdown-menu' role='menu' aria-labelledby='dLabel'>*/}
-                        {/*        /!*<li value="empty"></li>*!/*/}
-                        {/*        <li value="ad">*/}
-                        {/*            <div className='displayFlex'> <AndorraIconComponent />  Andorra </div>*/}
-                        {/*        </li>*/}
-                        {/*        <li value="ad">*/}
-                        {/*            <div className='displayFlex'> <AndorraIconComponent />  Andorra </div>*/}
-                        {/*        </li>*/}
-                        {/*    </ul>*/}
-                        {/*</div>*/}
-
-
-
-                        {/*<option value="arm">Armenia</option>*/}
-                        {/*<option value="bel">Belarus</option>*/}
-                        {/*<option value="bos">Bosnia and Herzegovina</option>*/}
-                        {/*<option value="bul">Bulgaria</option>*/}
-                        {/*<option value="cro">Croatia</option>*/}
-                        {/*<option value="geo">Georgia</option>*/}
-                        {/*<option value="gha">Ghana</option>*/}
-                        {/*<option value="ita">Italy</option>*/}
-                        {/*<option value="ivo">Ivory Coast</option>*/}
-                        {/*<option value="kaz">Kazakhstan</option>*/}
-                        {/*<option value="ken">Kenya</option>*/}
-                        {/*<option value="kyr">Kyrgyzstan</option>*/}
-                        {/*<option value="mol">Moldova</option>*/}
-                        {/*<option value="mon">Montenegro</option>*/}
-                        {/*<option value="mor">Morocco</option>*/}
-                        {/*<option value="nig">Nigeria</option>*/}
-                        {/*<option value="pol">Poland</option>*/}
-                        {/*<option value="por">Portugal</option>*/}
-                        {/*<option value="rom">Romania</option>*/}
-                        {/*<option value="ser">Serbia</option>*/}
-                        {/*<option value="slo">Slovenia</option>*/}
-                        {/*<option value="spa">Spain</option>*/}
-                        {/*<option value="tun">Tunisia</option>*/}
-                        {/*<option value="uga">Uganda</option>*/}
-                        {/*<option value="ukr">Ukraine</option>*/}
-
-
-                    {/*<CountrySelector />*/}
                 </div>
             </form>
         </div>
