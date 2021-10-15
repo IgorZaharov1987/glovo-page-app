@@ -82,6 +82,34 @@
     border-radius: 30px;
     border: 2px solid #00a082;
 }
+
+.country-selector button {
+    height: 38px;
+}
+
+.c-yellow {
+    color: #ffc244;
+    padding-left: 3px;
+}
+
+.names-wrapper {
+    display: flex;
+    height: 25px;
+}
+
+.phone-wrapper {
+    display: flex;
+}
+
+input, select {
+    height: 38px;
+    padding: 5px 5px;
+    margin-top: 5px;
+}
+
+p {
+    margin: 0;
+}
 /*.displayFlex {*/
 /*    display: flex;*/
 /*    align-items: flex-start;*/
