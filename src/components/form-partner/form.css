@@ -101,10 +101,15 @@
     display: flex;
 }
 
-input, select {
+input, select, .country-selector button {
     height: 38px;
     padding: 5px 5px;
     margin-top: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #d8d8d8;
+    color:#35495E;
 }
 
 p {

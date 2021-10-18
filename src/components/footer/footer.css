@@ -64,15 +64,10 @@ ul {
     padding-left: 0;
 }
 
-footer p {
-    color: #ffffff;
-    font-size: 13px;
-    font-family: "Gotham-Medium", sans-serif;
-    line-height: 35px;
-}
-
-footer a {
-    color: #ffffff;
+footer a, footer p {
+    font-weight: bold;
+    color: white;
     font-size: 14px;
-    font-family: "Gotham-Medium", sans-serif;
+    font-family: 'Gotham-Medium', sans-serif;
+    line-height: 33px;
 }
