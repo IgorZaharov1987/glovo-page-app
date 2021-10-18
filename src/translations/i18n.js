@@ -47,7 +47,7 @@ i18n
                         instagram: 'Instagram',
                         partnerWithUs: 'Partner with us',
                         partnerWithUsText: 'We need more information about your business to assess the partnership possibilities',
-                        companyName: 'Company name',
+                        companyName: 'Business name',
                         firstName: 'First name',
                         lastName: 'Last name',
                         eMail: 'E-mail',
@@ -57,7 +57,8 @@ i18n
                         estNumber: 'Number of establishments',
                         referral: 'Do you have a Referral or Promotional Code?',
                         privacy: 'I accept the privacy policy',
-                        continueBtn: 'Continue'
+                        continueBtn: 'Continue',
+                        country: 'Country'
                     }
                 }
             },
@@ -106,7 +107,8 @@ i18n
                         estNumber: 'Numărul de unități',
                         referral: 'Aveți un Cod de recomandare sau de promovare?',
                         privacy: 'Accept politica de confidențialitate',
-                        continueBtn: 'Continuare'
+                        continueBtn: 'Continuare',
+                        country: 'Tara'
                     }
                 }
             },
@@ -155,7 +157,8 @@ i18n
                         estNumber: 'Numero de establecimientos',
                         referral: '¿Tiene un código promocional o de referencia?',
                         privacy: 'Acepto la politica de privacidad',
-                        continueBtn: 'Continuar'
+                        continueBtn: 'Continuar',
+                        country: 'País'
                     }
                 }
             },

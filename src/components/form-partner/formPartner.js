@@ -1,14 +1,9 @@
 import './form.css';
-import React, { useState, Component } from 'react';
-
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import FloatingLabel from 'react-bootstrap-floating-label';
-
-import ReactFlagsSelect from 'react-flags-select';
+import React, { useState } from "react";
+import ReactFlagsSelect from "react-flags-select";
 import {useTranslation} from "react-i18next";
 import { useForm } from "react-hook-form";
+import Prefix from '../prefix-list/prefix';
 
 
 
@@ -29,48 +24,52 @@ function FormPartner() {
                     <p className='partner-us-txt'>{t('description.partnerWithUsText')}</p>
                     <hr id='form-line'/>
 
-                    <p id="prefix_dropdown-toggle" className="" style={{padding: "0px"}}>Country <span
+                    <p id="prefix_dropdown-toggle" className="" style={{padding: "0px"}}>{t('description.country')}<span
                         className="c-yellow">*</span></p>
                     <ReactFlagsSelect
                         selected={selected}
                         onSelect={code => setSelected(code)}
                         placeholder=' '
                         className="country-selector"
+                        {...register("countryFlag")}
                     />
 
-                    <p id="prefix_dropdown-toggle" className="" style={{padding: "0px"}}>Business Name <span
+                    <p id="prefix_dropdown-toggle" className="" style={{padding: "0px"}}>{t('description.companyName')}<span
                         className="c-yellow">*</span></p>
-                    <input type="text" placeholder={t('description.companyName')} style={{width: "100%"}}/>
+                    <input type="text" style={{width: "100%"}} {...register("businessName", { required: true})}/>
 
                     <div className="names-wrapper">
                         <div style={{width: "50%"}}>
-                            <p id="" className="" style={{padding: "0px"}}>Name<span
+                            <p id="" className="" style={{padding: "0px"}}>{t('description.firstName')}<span
                                 className="c-yellow">*</span></p></div>
                         <div style={{width: "50%"}}>
-                            <p id="" className="" style={{padding: "0px"}}>Surname<span
+                            <p id="" className="" style={{padding: "0px"}}>{t('description.lastName')}<span
                                 className="c-yellow">*</span></p></div>
                     </div>
 
 
-                    <input type="text" placeholder={t('description.firstName')} style={{width: "50%"}}/>
-                    <input type="text" placeholder={t('description.lastName')} style={{width: "50%"}}/>
-                    <div><p id="" className="" style={{padding: "0px"}}>E-mail<span
+                    <input type="text" style={{width: "50%"}} {...register("firstName", { required: true})}/>
+                    <input type="text" style={{width: "50%"}} {...register("lastName", { required: true})} />
+                    <div><p id="" className="" style={{padding: "0px"}}>{t('description.eMail')}<span
                         className="c-yellow">*</span></p></div>
-                    <input type="text" placeholder={t('description.eMail')} style={{width: "100%"}}/>
+                    <input type="text" style={{width: "100%"}} {...register("userEmail", { required: true})}/>
 
                     <div className="phone-wrapper">
                         <div style={{width: "30%"}}>
-                            <p id="prefix_dropdown-toggle" className="" style={{padding: "0px"}}>Prefix<span
+                            <p id="prefix_dropdown-toggle" className="" style={{padding: "0px"}}>{t('description.phone')}<span
                                 className="c-yellow">*</span></p></div>
                         <div style={{width: "70%"}}>
-                            <p id="prefix_dropdown-toggle" className="" style={{padding: "0px"}}>Phone number<span
-                                className="c-yellow">*</span></p></div>
+                            <p id="prefix_dropdown-toggle" className="" style={{padding: "0px"}}></p></div>
                     </div>
 
-                    <input type="number" placeholder={t('description.prefix')} style={{width: "30%"}}/>
-                    <input type="number" placeholder={t('description.phone')} style={{width: "70%"}}/>
+                    {/*Prefix component*/}
 
-                    <p id="prefix_dropdown-toggle" className="" style={{padding: "0px"}}>Type of establishment<span
+                    <Prefix {...register("numberPrefix")} />
+
+                    {/*Phone number*/}
+                    <input type="number" style={{width: "70%"}} {...register("phoneNumber", { required: true})} />
+
+                    <p id="prefix_dropdown-toggle" className="" style={{padding: "0px"}}>{t('description.estType')}<span
                         className="c-yellow">*</span></p>
                     <select {...register("typeOfEstablishment")} style={{width: "100%"}}>
                         <option disabled selected value></option>
@@ -81,7 +80,7 @@ function FormPartner() {
                         <option value="becomeCourier">Do you want to become a courier?</option>
                     </select>
 
-                    <p id="prefix_dropdown-toggle" className="" style={{padding: "0px"}}>Number of establishments<span
+                    <p id="prefix_dropdown-toggle" className="" style={{padding: "0px"}}>{t('description.estNumber')}<span
                         className="c-yellow">*</span></p>
                     <select {...register("numberOfEstablishments")} style={{width: "100%"}}>
                         <option disabled selected value></option>
@@ -105,7 +104,7 @@ function FormPartner() {
                         <span>{t('description.privacy')}</span>
                     </div>
 
-                    <button type="button" className="continue-btn">{t('description.continueBtn')}</button>
+                    <button type="submit" className="continue-btn">{t('description.continueBtn')}</button>
 
                     </div>
             </form>
