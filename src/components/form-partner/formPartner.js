@@ -4,21 +4,19 @@ import ReactFlagsSelect from "react-flags-select";
 import {useTranslation} from "react-i18next";
 import { useForm } from "react-hook-form";
 import Prefix from '../prefix-list/prefix';
+import useValidation from '../../hooks/formValidation';
 
 
 
 function FormPartner() {
     const { t, i18n } = useTranslation();
     const [selected, setSelected] = useState('');
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
-
-    console.log(watch("example"));
+    const [values, setValues] = useValidation();
 
 
     return (
         <div className='form-wrapper'>
-            <form onSubmit={handleSubmit(onSubmit)} id='page-form' className='main-form'>
+            <form onSubmit={ (event) => {event.preventDefault(); console.log(values);  } } id='page-form' className='main-form'>
                 <div className='form-inner-div' >
                     <p className='partner-us'>{t('description.partnerWithUs')}</p>
                     <p className='partner-us-txt'>{t('description.partnerWithUsText')}</p>
@@ -26,17 +24,19 @@ function FormPartner() {
 
                     <p id="prefix_dropdown-toggle" className="" style={{padding: "0px"}}>{t('description.country')}<span
                         className="c-yellow">*</span></p>
+
+
                     <ReactFlagsSelect
                         selected={selected}
                         onSelect={code => setSelected(code)}
                         placeholder=' '
                         className="country-selector"
-                        {...register("countryFlag")}
                     />
 
                     <p id="prefix_dropdown-toggle" className="" style={{padding: "0px"}}>{t('description.companyName')}<span
                         className="c-yellow">*</span></p>
-                    <input type="text" style={{width: "100%"}} {...register("businessName", { required: true})}/>
+
+                    <input type="text" style={{width: "100%"}} name="companyName" onChange={setValues} />
 
                     <div className="names-wrapper">
                         <div style={{width: "50%"}}>
@@ -48,11 +48,11 @@ function FormPartner() {
                     </div>
 
 
-                    <input type="text" style={{width: "50%"}} {...register("firstName", { required: true})}/>
-                    <input type="text" style={{width: "50%"}} {...register("lastName", { required: true})} />
+                    <input type="text" style={{width: "50%"}} name="firstName" onChange={setValues}/>
+                    <input type="text" style={{width: "50%"}} name="lastName" onChange={setValues} />
                     <div><p id="" className="" style={{padding: "0px"}}>{t('description.eMail')}<span
                         className="c-yellow">*</span></p></div>
-                    <input type="text" style={{width: "100%"}} {...register("userEmail", { required: true})}/>
+                    <input type="email" style={{width: "100%"}} name="email" />
 
                     <div className="phone-wrapper">
                         <div style={{width: "30%"}}>
@@ -63,26 +63,28 @@ function FormPartner() {
                     </div>
 
                     {/*Prefix component*/}
-
-                    <Prefix {...register("numberPrefix")} />
+                    {/*{...register("numberPrefix")}*/}
+                    <Prefix />
 
                     {/*Phone number*/}
-                    <input type="number" style={{width: "70%"}} {...register("phoneNumber", { required: true})} />
+                    <input type="number" style={{width: "70%"}} name="phoneNumber" onChange={setValues} />
 
                     <p id="prefix_dropdown-toggle" className="" style={{padding: "0px"}}>{t('description.estType')}<span
                         className="c-yellow">*</span></p>
-                    <select {...register("typeOfEstablishment")} style={{width: "100%"}}>
+
+
+                    <select   style={{width: "100%"}}>
                         <option disabled selected value></option>
                         <option value="restaurant">Restaurant</option>
                         <option value="pharmacy">Pharmacy</option>
                         <option value="shop">Shop</option>
-                        <option value="supermarket">Supermarket</option>
+                        <option nvalue="supermarket">Supermarket</option>
                         <option value="becomeCourier">Do you want to become a courier?</option>
                     </select>
 
                     <p id="prefix_dropdown-toggle" className="" style={{padding: "0px"}}>{t('description.estNumber')}<span
                         className="c-yellow">*</span></p>
-                    <select {...register("numberOfEstablishments")} style={{width: "100%"}}>
+                    <select  style={{width: "100%"}}>
                         <option disabled selected value></option>
                         <option value="1">1</option>
                         <option value="2">2</option>
