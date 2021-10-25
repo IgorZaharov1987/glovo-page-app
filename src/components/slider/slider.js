@@ -6,11 +6,17 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import './slider.css';
 import {useTranslation} from "react-i18next";
 
+
 function Slider() {
     const { t, i18n } = useTranslation();
 
     return (
-        <OwlCarousel className='owl-theme' loop margin={10} nav>
+        <OwlCarousel
+            className="owl-carousel owl-theme"
+            loop={true}
+            autoplay={true}
+            items={1}
+        >
             <div className='item'>
                 <img
                     src="https://image.partner.glovoapp.com/lib/fe4511707564057d751573/m/1/f10f5548-07fa-4aa6-bf8d-50572266c931.png"
@@ -41,6 +47,7 @@ function Slider() {
                     <p>{t('description.author3')}</p>
                 </div>
             </div>
+
 
         </OwlCarousel>
     );

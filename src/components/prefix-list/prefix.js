@@ -2,10 +2,11 @@ import './prefix.css';
 import React, {useContext} from 'react';
 
 
-function Prefix() {
+function Prefix({onChange}) {
     return (
         // country codes (ISO 3166) and Dial codes.
-        <select name="countryCode" id="" className="prefix-list" style={{width: "30%", color:"#35495E"} } onChange={(event) => console.log(event.target.value)}>
+        <select onChange={(event) => onChange(event.target.value)} name="countryCode" id="" className="prefix-list"
+                style={{width: "30%", color: "#35495E"}} >
             <option disabled selected value></option>
             <option data-countryCode="GB" value="44" Selected>UK (+44)</option>
             <option data-countryCode="US" value="1">USA (+1)</option>

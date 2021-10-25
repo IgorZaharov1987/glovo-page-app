@@ -115,6 +115,30 @@ input, select, .country-selector button {
 p {
     margin: 0;
 }
+
+.active {
+    display: flex;
+}
+
+.active button {
+    font-family: GothamBold, sans-serif;
+    text-align: center;
+    font-size: 16px;
+    background: #00a082;
+    padding: 15px 50px;
+    border-radius: 30px;
+    color: #ffffff;
+    border: 2px solid #00a082;
+    width: 190px;
+    height: 53px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+.hidden {
+    display: none;
+}
 /*.displayFlex {*/
 /*    display: flex;*/
 /*    align-items: flex-start;*/

@@ -18,7 +18,7 @@ function Header() {
 
 
     return (
-      <div className='main-header'>
+      <div className='main-header' id='main-header'>
         <header className='header'>
             <div className='lang-container'>
                 <div className='lang-selector'>
