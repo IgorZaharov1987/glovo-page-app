@@ -58,7 +58,8 @@ i18n
                         referral: 'Do you have a Referral or Promotional Code?',
                         privacy: 'I accept the privacy policy',
                         continueBtn: 'Continue',
-                        country: 'Country'
+                        country: 'Country',
+                        partnerWithUsLink: 'Partner with us'
                     }
                 }
             },
@@ -108,7 +109,8 @@ i18n
                         referral: 'Aveți un Cod de recomandare sau de promovare?',
                         privacy: 'Accept politica de confidențialitate',
                         continueBtn: 'Continuare',
-                        country: 'Tara'
+                        country: 'Tara',
+                        partnerWithUsLink: 'Lucrați cu noi'
                     }
                 }
             },
@@ -158,7 +160,8 @@ i18n
                         referral: '¿Tiene un código promocional o de referencia?',
                         privacy: 'Acepto la politica de privacidad',
                         continueBtn: 'Continuar',
-                        country: 'País'
+                        country: 'País',
+                        partnerWithUsLink: 'Empieza a vender dentro de Glovo'
                     }
                 }
             },

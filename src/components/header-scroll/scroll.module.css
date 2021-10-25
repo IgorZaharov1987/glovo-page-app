@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    height: 60px;
+    max-width: 1270px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 999999;
+    animation: stickyHeader 0.5s ease-in-out;
+    box-shadow: 0px 15px 10px -15px #111;
+}
+
+.headerButton {
+    background: #00a082;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 50px;
+    border-radius: 90px;
+    border: 2px solid #00a082;
+}
+
+@keyframes stickyHeader {
+from { top: -80px }
+to { top: 0px }
+}
