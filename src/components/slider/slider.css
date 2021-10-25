@@ -2,9 +2,10 @@
     text-align: center;
 }
 .item {
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    /*display: grid;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    width: 100%;
 }
 
 .item img {
